@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: path.resolve("src", "index.js"),
-  mode: "development",
+
   module: {
     rules: [
       {
@@ -49,19 +49,24 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
+    clean: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
       templateContent: `
-        <html>
-          <body>
-            <div id="root"></div>
-          </body>
-        </html>
+      <!DOCTYPE html>
+      <html lang="de">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Page Leontin Kremer</title>
+        </head>
+        <body>
+          <div id="root"></div>
+        </body>
+      </html>
       `,
-    }),
-    new MiniCssExtractPlugin({
-      filename: "main-[hash:8].css",
     }),
   ],
 };

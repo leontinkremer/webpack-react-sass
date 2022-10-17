@@ -8,8 +8,8 @@
     "react-dom": "^18.2.0"
   },
   "scripts": {
-    "start": "webpack-dev-server",
-    "compile": "webpack"
+    "start": "webpack-dev-server --config webpack.dev.js",
+    "build": "webpack build --config webpack.prod.js"
   },
   "eslintConfig": {
     "extends": [
@@ -52,6 +52,7 @@
     "svg-inline-loader": "^0.8.2",
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^4.11.1"
+    "webpack-dev-server": "^4.11.1",
+    "webpack-merge": "^5.8.0"
   }
 }
