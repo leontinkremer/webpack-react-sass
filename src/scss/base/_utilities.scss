@@ -24,6 +24,16 @@
   }
 }
 
+.u-margin-right {
+  &-xs {
+    margin-right: 1rem;
+  }
+
+  &-sm {
+    margin-right: 2rem;
+  }
+}
+
 .u-margin-bottom {
   &-xs {
     margin-bottom: 1rem;

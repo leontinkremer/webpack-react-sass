@@ -6,30 +6,35 @@
 /* Breakpoints */
 /* Paths */
 /* Grid setup */
-$grid-width: 114rem;
-$gutter-vertical: 8rem;
-$gutter-horizontal: 6rem;
 
-/* Colour palette */
-$black: #000;
-$white: #fff;
-$light-gray: #f1f1f1;
-$color-grey-light-1: #f7f7f7;
+/* Main colors */
+$primary-color: #102f3f;
+$secondary-color: #335566;
+$tertiary-color: #8fafbf;
 
-$body-background-color: #333;
-$foreground-color: #fff;
-$caption-color: #464646;
-$accent-color: #999;
-$link-color: #1f56ec;
+/* Main colors light*/
+$primary-color-light: #1b333f;
+$secondary-color-light: #435a66;
+$tertiary-color-light: #9db2bd;
+
+/* Main colors dark */
+$primary-color-dark: #001e2c;
+$secondary-color-dark: #225269;
+$tertiary-color-dark: #6c9db6;
+
+/* Soft neutral colors */
+$soft-neutral-color-0: #ffffff;
+$soft-neutral-color-50: #f0f1f2;
+$soft-neutral-color-100: #e0e3e5;
+$soft-neutral-color-200: #c6cacc;
+$soft-neutral-color-400: #919699;
+$soft-neutral-color-700: #464a4c;
 
 /* Components */
-
-/* colors */
-
-$color-light-red: #3967e4;
-$color-medium-red: #1431b1;
-$color-dark-red: #1a2072;
 
 /* Transitions */
 /* fast, faster, fastest*/
 $transition-faster: all 0.4s ease-in-out;
+$transition-fastest: all 0.2s ease-in-out;
+
+$v-border-xs: 0.1rem;

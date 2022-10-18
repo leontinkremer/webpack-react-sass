@@ -1,48 +1,7 @@
 @import "../../../scss/app.scss";
 
-$color: rgb(14, 54, 92);
-
 .App {
-  text-align: center;
+  width: 70%;
 
-  .Header {
-    background-color: $color;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-
-    .Logo {
-      height: 80vmin;
-      pointer-events: none;
-    }
-
-    @media (prefers-reduced-motion: no-preference) {
-      .Logo {
-        animation: App-logo-spin infinite 20s linear;
-      }
-    }
-
-    .Title {
-      color: white;
-      font-family: OpenSansLight;
-    }
-
-    .Link {
-      color: white;
-      font-family: OpenSansRegular;
-    }
-  }
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  margin: 10rem auto 10rem auto;
 }

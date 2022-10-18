@@ -141,6 +141,8 @@ a {
 button,
 input {
   line-height: normal; // 1
+  border-style: none;
+  background: transparent;
 }
 
 // 1. Addresses appearance set to searchfield in Safari 5, Chrome
