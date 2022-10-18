@@ -20,6 +20,7 @@ module.exports = {
         test: /\.(s[ca]ss)$/i,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
+
       {
         test: /\.svg$/,
         loader: "svg-inline-loader",
@@ -30,14 +31,6 @@ module.exports = {
         options: {
           outputPath: "images",
           name: "[name]-[sha1:hash:7].[ext]",
-        },
-      },
-      {
-        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-        loader: "file-loader",
-        options: {
-          name: "[name].[ext]",
-          outputPath: "fonts",
         },
       },
     ],

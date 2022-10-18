@@ -1,8 +1,24 @@
 /**
  * Fonts
 */
-// @font-face {
-//   font-family: "OpenSans";
-//   src: local("OpenSans"),
-//     url(../../fonts/OpenSans/OpenSans-Bold.ttf) format("truetype");
-// }
+
+@font-face {
+  font-family: "OpenSansLight";
+  font-style: normal;
+  font-weight: normal;
+  src: url(../../../fonts/OpenSans/OpenSans-Light.ttf);
+}
+
+@font-face {
+  font-family: "OpenSansRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url(../../../fonts/OpenSans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "OpenSansBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url(../../../fonts/OpenSans/OpenSans-ExtraBold.ttf);
+}

@@ -16,7 +16,7 @@ $color: rgb(14, 54, 92);
     color: white;
 
     .Logo {
-      height: 40vmin;
+      height: 80vmin;
       pointer-events: none;
     }
 
@@ -28,10 +28,12 @@ $color: rgb(14, 54, 92);
 
     .Title {
       color: white;
+      font-family: OpenSansLight;
     }
 
     .Link {
       color: white;
+      font-family: OpenSansRegular;
     }
   }
 }
