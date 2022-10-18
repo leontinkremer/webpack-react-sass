@@ -1,0 +1,35 @@
+// Use sizes: xs, sm, md, lg
+
+.u-center-text {
+  text-align: center;
+}
+
+.u-padding-top {
+  &-xs {
+    padding-top: 1rem;
+  }
+
+  &-sm {
+    padding-top: 10rem;
+  }
+}
+
+.u-margin-top {
+  &-xs {
+    margin-top: 1rem;
+  }
+
+  &-sm {
+    margin-top: 2rem;
+  }
+}
+
+.u-margin-bottom {
+  &-xs {
+    margin-bottom: 1rem;
+  }
+
+  &-sm {
+    margin-bottom: 2rem;
+  }
+}
