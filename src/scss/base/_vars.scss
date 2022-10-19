@@ -4,6 +4,12 @@
 
 /* Typography */
 /* Breakpoints */
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
 /* Paths */
 /* Grid setup */
 
@@ -29,6 +35,8 @@ $soft-neutral-color-100: #e0e3e5;
 $soft-neutral-color-200: #c6cacc;
 $soft-neutral-color-400: #919699;
 $soft-neutral-color-700: #464a4c;
+$soft-neutral-color-800: #222425;
+$soft-neutral-color-900: #101112;
 
 /* Components */
 

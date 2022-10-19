@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./_Button.scss";
+import "./_layout.scss";
 
 function Button({ buttonType, marginRight, children }) {
   return (
