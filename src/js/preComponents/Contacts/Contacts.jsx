@@ -1,18 +1,29 @@
 import React from "react";
-import { useLocation, useHistory } from "react-router";
+import { Switch, Route, Link } from "react-router-dom";
 import PropTypes from "prop-types";
+
 import "./_Contacts.scss";
+
 import Button from "../../components/Button";
+import ContactDepartament1 from "../ContactDepartment1";
+import ContactDepartament2 from "../ContactDepartment2";
 
 const Contacts = () => {
-  const location = useLocation();
-  const history = useHistory();
-
   return (
     <>
       <h1>Контакты</h1>
-      <Button marginRight="xs">Показать контакты</Button>
-      <Button buttonType="secondary">Новый контакт</Button>
+      <ul>
+        <li>
+          <Link to="/contacts/departament1">Департамент 1</Link>
+        </li>
+        <li>
+          <Link to="/contacts/departament2">Департамент 2</Link>
+        </li>
+      </ul>
+      <Switch>
+        <Route path="/contacts/departament1" component={ContactDepartament1} />
+        <Route path="/contacts/departament2" component={ContactDepartament2} />
+      </Switch>
     </>
   );
 };
