@@ -10,14 +10,12 @@ const Navbar = () => {
         <Link to="/">Главная</Link>
       </li>
       <li>
-        <Link to="/singin">Вход в кабинет</Link>
+        <Link to="/about">О нас</Link>
       </li>
       <li>
         <Link to="/posts">Записи</Link>
       </li>
-      <li>
-        <Link to="/posts">Запись о конкретном</Link>
-      </li>
+
       <li>
         <Link to="/contacts">Контакты</Link>
       </li>

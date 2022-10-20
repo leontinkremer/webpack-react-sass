@@ -2,10 +2,13 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./_layout.scss";
 
-function Button({ buttonType, marginRight, children }) {
+function Button({ buttonType, marginRight, children, handleClick }) {
   return (
     <>
       <button
+        onClick={(id) => {
+          handleClick();
+        }}
         className={
           "button" +
           (buttonType === "primary" ? ` button__button--primary` : "") +

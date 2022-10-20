@@ -1,18 +1,27 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import PropTypes from "prop-types";
+import Button from "../../components/Button";
 import "./_Post.scss";
 
-const Post = ({ match, posts }) => {
-  const postId = match.params.postId;
+const Post = ({ post, id }) => {
+  // Получение истории
+  const history = useHistory();
 
-  // В хранилище записей id - число,
-  // а значения в match.params всегда строки
-  const getPost = (postId) => posts.find(({ id }) => String(id) === postId);
-  const post = getPost(postId);
+  // Перенесена функция из Posts
+  // Создаём функцию для перехода к списку постов
+  const goToList = () => {
+    // Передаём значение и проверяем есть ли запись. Если нет то заменяем историю
+    post ? history.push("/posts") : history.replace("/posts");
+  };
 
   // Выведем заголовок если есть запись и сообщение об ошибке если нет
-  return <h1>{post ? post.title : `post with id: ${postId} is not found`}</h1>;
+  return (
+    <>
+      <Button handleClick={goToList}> В список записей</Button>
+      <h1>{post ? post.title : `post with id: ${id} is not found`}</h1>
+    </>
+  );
 };
 
 Post.propTypes = {};
