@@ -1,0 +1,21 @@
+@import "../../../scss/app.scss";
+.row {
+  /* Other */
+  // max-width: 960px;
+  margin: 0 auto;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  @include clearfix;
+
+  [class^="col-"] {
+    float: left;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+      color: white;
+    }
+  }
+}

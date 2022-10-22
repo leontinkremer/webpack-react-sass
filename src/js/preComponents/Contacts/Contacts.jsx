@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 
 import "./_Contacts.scss";
 
-import Button from "../../components/Button";
 import ContactDepartament1 from "../ContactDepartment1";
 import ContactDepartament2 from "../ContactDepartment2";
 
