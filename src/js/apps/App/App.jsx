@@ -10,7 +10,7 @@ function App() {
     <div className={styles.App}>
       <Grid>
         <GridCol col="col-1-of-1">
-          <Navbar>test</Navbar>
+          <Navbar>Navbar</Navbar>
         </GridCol>
       </Grid>
     </div>

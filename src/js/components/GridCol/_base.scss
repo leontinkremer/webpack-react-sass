@@ -62,20 +62,20 @@
   .col-1-of-4 {
     width: calc((100% - 3 * #{10px}) / 4);
     min-height: 50px;
-    background-color: #d02e4f;
+    // background-color: #d02e4f;
     color: white;
   }
 
   .col-1-of-6 {
     width: calc((100% - 5 * #{10px}) / 6);
     min-height: 50px;
-    background-color: #e14e29;
+    // background-color: #e14e29;
     color: white;
   }
 
   .col-4-of-6 {
     width: calc((100% - 2 * #{10px}) - (2 * (100% - 5 * #{10px}) / 6));
-    min-height: 50px;
+    // min-height: 50px;
     background-color: #e14e29;
     color: white;
   }

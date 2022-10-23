@@ -4,10 +4,11 @@ import { BrowserRouter } from "react-router-dom";
 
 import RoutingApp from "./apps/RoutingApp";
 import App from "./apps/App";
+import Jobtime from "./apps/Jobtime";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
-    <App />
+    <Jobtime />
   </BrowserRouter>
 );

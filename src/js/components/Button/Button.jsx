@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./_layout.scss";
 
-function Button({ buttonType, marginRight, children, handleClick }) {
+const Button = ({ buttonType, marginRight, children, handleClick }) => {
   return (
     <>
       <button
@@ -20,7 +20,7 @@ function Button({ buttonType, marginRight, children, handleClick }) {
       </button>
     </>
   );
-}
+};
 
 Button.propTypes = {
   buttonType: PropTypes.string,
