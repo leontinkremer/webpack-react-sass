@@ -3,21 +3,11 @@ import PropTypes from "prop-types";
 import "./_layout.scss";
 
 import Navbar from "../../components/Navbar";
-import Grid from "../../components/Grid";
-import GridCol from "../../components//GridCol";
 
 const JobTimePageMain = () => {
   return (
     <>
-      <Navbar backgroundColor="$primary-color">
-        <Grid>
-          <GridCol col="col-1-of-6"></GridCol>
-          <GridCol col="col-4-of-6" height="lg">
-            Jobtimes
-          </GridCol>
-          <GridCol col="col-1-of-6"></GridCol>
-        </Grid>
-      </Navbar>
+      <Navbar backgroundColor="$primary-color" />
       <p>Hauptseite mit Registrierung</p>
     </>
   );

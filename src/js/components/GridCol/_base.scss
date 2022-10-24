@@ -3,7 +3,7 @@
   /* Other */
   // max-width: 960px;
   margin: 0 auto;
-
+  position: relative;
   &:not(:last-child) {
     margin-bottom: 10px;
   }
@@ -76,7 +76,7 @@
   .col-4-of-6 {
     width: calc((100% - 2 * #{10px}) - (2 * (100% - 5 * #{10px}) / 6));
     // min-height: 50px;
-    background-color: #e14e29;
+    // background-color: #e14e29;
     color: white;
   }
 

@@ -13,6 +13,7 @@ const Jobtime = () => {
   return (
     <div className={styles.App}>
       <Switch>
+        {/* // doing: continue with navigation in JobTimePageMain */}
         <Route exact path="/" component={JobTimePageMain} />
         <Route exact path="/login" component={JobTimePageLogin} />
         <Route exact path="/projects" component={JobTimePageProjects} />
