@@ -28,7 +28,9 @@ const RoutingApp = () => {
         <Route path="/posts/:postId?" component={Posts} />
         <Route path="/contacts" component={Contacts} />
         <Redirect from="/lk" to="/signin" />
+
         <Route component={NotFound} />
+        <Redirect to="/" />
       </Switch>
     </>
   );

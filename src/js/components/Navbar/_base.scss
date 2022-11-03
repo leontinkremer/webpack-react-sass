@@ -1,4 +1,11 @@
 @import "../../../scss/app.scss";
 .navbar {
   /* Other */
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: $heigth-md;
+  }
 }

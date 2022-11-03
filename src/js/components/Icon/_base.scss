@@ -1,0 +1,25 @@
+@import "../../../scss/app.scss";
+
+.icon {
+  float: right;
+  margin: 1rem;
+
+  /* Styles */
+  padding: 0.5rem 1rem;
+  @include m-border-radius-xs;
+
+  /* Animation */
+  transition: $transition-faster;
+
+  &:hover,
+  &:active {
+    /* Styles */
+    background-color: $primary-color-light;
+  }
+
+  &--absolute-right {
+    position: absolute;
+    right: -2%;
+    top: -10%;
+  }
+}

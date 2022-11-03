@@ -1,8 +1,6 @@
 @import "../../../scss/app.scss";
 
 .navigation-logo {
-  top: 50%;
-  position: absolute;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  /* Positioning */
+  float: left;
 }

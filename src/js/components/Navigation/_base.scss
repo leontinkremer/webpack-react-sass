@@ -1,16 +1,8 @@
 @import "../../../scss/app.scss";
 
 .nav {
-  top: 50%;
-  right: 17%;
-  position: absolute;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-
-  /* Styles */
-
   &__nav-item {
-    float: left;
+    float: right;
 
     :hover,
     :active {

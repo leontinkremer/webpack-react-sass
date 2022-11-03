@@ -1,0 +1,21 @@
+@import "../../../scss/app.scss";
+.login-box {
+  box-sizing: border-box;
+  margin: 10rem auto 5rem auto;
+  padding: 5rem;
+  width: fit-content;
+  background-color: $primary-color-regular;
+  border-radius: $v-border-xs;
+  box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.16);
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    flex-direction: column;
+  }
+}

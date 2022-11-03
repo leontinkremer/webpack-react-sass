@@ -3,6 +3,18 @@
 */
 
 /* Typography */
+$font-weight-light: "OpenSansLight";
+$font-weight-regular: "OpenSansRegular";
+$font-weight-bold: "OpenSansBold";
+
+$font-size-xxs: 1rem;
+$font-size-xs: 1.4rem;
+$font-size-sm: 1.6rem;
+$font-size-md: 1.8rem;
+$font-size-lg: 2.4rem;
+$font-size-xl: 3rem;
+$font-size-xxl: 3.6rem;
+
 /* Breakpoints */
 $breakpoint-xs: 0;
 $breakpoint-sm: 576px;
@@ -14,19 +26,29 @@ $breakpoint-xl: 1200px;
 /* Grid setup */
 
 /* Main colors */
-$primary-color: #102f3f;
-$secondary-color: #335566;
-$tertiary-color: #8fafbf;
+$primary-color-regular: #102f3f;
+$primary-color-light: lighten($primary-color-regular, 5%);
+$primary-color-lighter: lighten($primary-color-regular, 10%);
+$primary-color-lightest: lighten($primary-color-regular, 60%);
+$primary-color-dark: darken($primary-color-regular, 5%);
+$primary-color-darker: darken($primary-color-regular, 10%);
+$primary-color-darkest: darken($primary-color-regular, 20%);
 
-/* Main colors light*/
-$primary-color-light: #1b333f;
-$secondary-color-light: #435a66;
-$tertiary-color-light: #9db2bd;
+$secondary-color-regular: #335566;
+$secondary-color-light: lighten($secondary-color-regular, 5%);
+$secondary-color-lighter: lighten($secondary-color-regular, 10%);
+$secondary-color-lightest: lighten($secondary-color-regular, 60%);
+$secondary-color-dark: darken($secondary-color-regular, 5%);
+$secondary-color-darker: darken($secondary-color-regular, 10%);
+$secondary-color-darkest: darken($secondary-color-regular, 20%);
 
-/* Main colors dark */
-$primary-color-dark: #001e2c;
-$secondary-color-dark: #225269;
-$tertiary-color-dark: #6c9db6;
+$tertiary-color-regular: #ff9700;
+$tertiary-color-light: lighten($tertiary-color-regular, 5%);
+$tertiary-color-lighter: lighten($tertiary-color-regular, 10%);
+$tertiary-color-lightest: lighten($tertiary-color-regular, 60%);
+$tertiary-color-dark: darken($tertiary-color-regular, 5%);
+$tertiary-color-darker: darken($tertiary-color-regular, 10%);
+$tertiary-color-darkest: darken($tertiary-color-regular, 20%);
 
 /* Soft neutral colors */
 $soft-neutral-color-0: #ffffff;
@@ -54,4 +76,7 @@ $heigth-xxl: 12rem;
 $transition-faster: all 0.4s ease-in-out;
 $transition-fastest: all 0.2s ease-in-out;
 
-$v-border-xs: 0.1rem;
+$v-border-xxs: 0.1rem;
+$v-border-xs: 0.2rem;
+$v-border-sm: 0.5rem;
+$v-border-sm: 1rem;

@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./_layout.scss";
 
-const GridCol = ({ children, col, height }) => {
+const GridCol = ({ children, col, height, display }) => {
   console.log(height);
   return (
     <div
@@ -14,7 +14,10 @@ const GridCol = ({ children, col, height }) => {
         (height === "md" ? ` u-height__md` : "") +
         (height === "lg" ? ` u-height__lg` : "") +
         (height === "xl" ? ` u-height__xl` : "") +
-        (height === "xxl" ? ` u-height__xxl` : "")
+        (height === "xxl" ? ` u-height__xxl` : "") +
+        (display === "flex__space-between__center"
+          ? ` flex__space-between__center`
+          : "")
       }
     >
       {children}

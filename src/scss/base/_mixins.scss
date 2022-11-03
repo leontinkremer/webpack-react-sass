@@ -11,7 +11,14 @@
 }
 
 @mixin m-border-radius-xs {
-  border-radius: 0.2rem;
+  border-radius: $v-border-sm;
+}
+
+// Animations
+@mixin m-transition-all {
+  &-faster {
+    transition: $transition-faster;
+  }
 }
 
 // Media queries

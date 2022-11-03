@@ -1,16 +1,14 @@
 /* CSS-Anweisungen für Tabltets und Notebooks */
 
 @media only screen and (min-width: $breakpoint-sm) and (max-width: $breakpoint-lg) {
-  .button {
-    &__button--primary {
-      background-color: rgb(173, 142, 0);
-      &:hover {
+  .nav {
+    &__nav-item {
+      float: none;
+      :hover,
+      :active {
       }
-    }
 
-    &__button-secondary {
-      &:hover,
-      &:active {
+      &__nav-item-link {
       }
     }
   }
