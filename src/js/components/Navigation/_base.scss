@@ -4,16 +4,21 @@
   &__nav-item {
     float: right;
 
-    :hover,
-    :active {
-      background-color: $secondary-color-light;
+    &:hover,
+    &:active {
+      background-color: $primary-color-light;
     }
 
     &__nav-item-link {
       display: block;
       color: $soft-neutral-color-0;
       text-align: center;
-      padding: 16px;
+      padding: 1rem;
+
+      &:hover,
+      &:active {
+        color: $soft-neutral-color-0;
+      }
     }
   }
 }

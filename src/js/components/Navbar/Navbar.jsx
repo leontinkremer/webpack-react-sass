@@ -17,6 +17,7 @@ const Navbar = ({ backgroundColor, height }) => {
 
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const [showMobileNavMenue, setShowMobileNavMenue] = useState(false);
+  console.log("showMobileNavMenue", showMobileNavMenue);
 
   useEffect(() => {
     const handleResize = () => {
@@ -63,7 +64,7 @@ const Navbar = ({ backgroundColor, height }) => {
         className={
           "navbar" +
           (backgroundColor === "$primary-color"
-            ? ` u-background-color__primary-color-regular`
+            ? ` u-background-color-primary-color-regular`
             : "") +
           (height === "xxs" ? ` u-height__xxs` : "") +
           (height === "xs" ? ` u-height__xs` : "") +
@@ -76,10 +77,14 @@ const Navbar = ({ backgroundColor, height }) => {
       >
         <div className="navbar__inner">
           {tablet || notebook || desktop ? (
-            <NavigationLogo height="sm" />
+            <NavigationLogo height="sm" float="right" />
           ) : null}
           {smartphone || tablet ? (
-            <Icon iconClass="bi-list" handleClick={handleNaviconClick} />
+            <Icon
+              iconClass="bi-list"
+              handleClick={handleNaviconClick}
+              position="icon--right"
+            />
           ) : (
             <Navigation />
           )}

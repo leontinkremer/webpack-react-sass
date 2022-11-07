@@ -3,4 +3,8 @@
 .navigation-logo {
   /* Positioning */
   float: left;
+
+  &--right {
+    float: right;
+  }
 }

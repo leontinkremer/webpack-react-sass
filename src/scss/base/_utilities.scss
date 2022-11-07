@@ -2,8 +2,12 @@
   &-primary-color-regular {
     background-color: $primary-color-regular;
 
-    &:hover {
-      background-color: $primary-color-dark;
+    &-primary-color-regular {
+      background-color: $primary-color-regular;
+
+      &:hover {
+        background-color: $primary-color-dark;
+      }
     }
   }
 

@@ -7,7 +7,7 @@ import Navbar from "../../components/Navbar";
 const JobTimePageMain = () => {
   return (
     <>
-      <Navbar backgroundColor="$primary-color" height="md" />
+      <Navbar backgroundColor="$primary-color" />
       <p>Hauptseite mit Registrierung</p>
     </>
   );

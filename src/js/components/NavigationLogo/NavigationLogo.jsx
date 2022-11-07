@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import "./_layout.scss";
 import logo from "../../../images/logo.png";
 
-const NavigationLogo = ({ height }) => {
+const NavigationLogo = ({ height, float }) => {
   return (
     <img
       className={
@@ -14,7 +14,8 @@ const NavigationLogo = ({ height }) => {
         (height === "md" ? ` u-height__md` : "") +
         (height === "lg" ? ` u-height__lg` : "") +
         (height === "xl" ? ` u-height__xl` : "") +
-        (height === "xxl" ? ` u-height__xxl` : "")
+        (height === "xxl" ? ` u-height__xxl` : "") +
+        (float === "right" ? ` navigation-logo--right` : "")
       }
       src={logo}
       alt="Website-Logo"
