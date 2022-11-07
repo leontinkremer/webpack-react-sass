@@ -13,7 +13,7 @@ const UsersList = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [professions, setProfession] = useState();
   const [selectedProf, setSelectedProf] = useState();
-  const [searchedUser, setSearchedUser] = useState(""); // "Моника Геллер"
+  const [searchQuery, setSearchQuery] = useState("");
   const [sortBy, setSortBy] = useState({ path: "name", order: "asc" });
   const pageSize = 8;
 
@@ -43,48 +43,45 @@ const UsersList = () => {
   }, [selectedProf]);
 
   const handleProfessionSelect = (item) => {
-    setSearchedUser("");
+    setSearchQuery("");
     setSelectedProf(item);
+  };
+
+  const handleSort = (item) => {
+    setSortBy(item);
+  };
+
+  const handleSearchQuery = ({ target }) => {
+    setSelectedProf();
+    setSearchQuery(target.value);
   };
 
   const handlePageChange = (pageIndex) => {
     setCurrentPage(pageIndex);
   };
-  const handleSort = (item) => {
-    setSortBy(item);
-  };
-
-  // doing: ...
-  const handleSearch = (item) => {
-    setSelectedProf();
-    setSearchedUser(item.target.value);
-  };
 
   if (users) {
-    let filteredUsers = [];
-
-    if (searchedUser) {
-      filteredUsers = users.filter((user) =>
-        user.name
-          .trim()
-          .toLowerCase()
-          .includes(searchedUser.trim().toLowerCase())
-      );
-    } else if (selectedProf) {
-      filteredUsers = users.filter(
-        (user) =>
-          JSON.stringify(user.profession) === JSON.stringify(selectedProf)
-      );
-    } else {
-      filteredUsers = users;
-    }
+    const filteredUsers = searchQuery
+      ? users.filter(
+          (user) =>
+            user.name
+              .trim()
+              .toLowerCase()
+              .indexOf(searchQuery.toLowerCase()) !== -1
+        )
+      : selectedProf
+      ? users.filter(
+          (user) =>
+            JSON.stringify(user.profession) === JSON.stringify(selectedProf)
+        )
+      : users;
 
     const count = filteredUsers.length;
     const sortedUsers = _.orderBy(filteredUsers, [sortBy.path], [sortBy.order]);
     const usersCrop = paginate(sortedUsers, currentPage, pageSize);
     const clearFilter = () => {
       setSelectedProf();
-      setSearchedUser("");
+      setSearchQuery("");
     };
 
     return (
@@ -110,8 +107,8 @@ const UsersList = () => {
           <div className="u-margin-top-sm">
             <TextField
               label="Поиск"
-              onChange={handleSearch}
-              value={searchedUser}
+              onChange={handleSearchQuery}
+              value={searchQuery}
             />
           </div>
 
