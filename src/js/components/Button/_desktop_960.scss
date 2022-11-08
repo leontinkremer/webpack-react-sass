@@ -2,12 +2,12 @@
 
 @media only screen and (min-width: $breakpoint-lg) {
   .button {
-    &__button--primary {
+    &Primary {
       &:hover {
       }
     }
 
-    &__button-secondary {
+    &Secondary {
       &:hover,
       &:active {
       }

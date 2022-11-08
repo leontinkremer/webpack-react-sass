@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import "./_layout.scss";
+import styles from "./_layout.module.scss";
 
 const Button = ({
   children,
@@ -21,15 +21,15 @@ const Button = ({
     // Set button type
     switch (buttonType) {
       case "secondary":
-        setButtontype("button__button--secondary");
+        setButtontype(styles.buttonButtonSecondary);
         break;
 
       case "tertiary":
-        setButtontype("button__button--tertiary");
+        setButtontype(styles.buttonTertiary);
         break;
 
       default:
-        setButtontype("button__button--primary");
+        setButtontype(styles.buttonPrimary);
         break;
     }
 
@@ -106,25 +106,17 @@ const Button = ({
     }
 
     setClassList(
-      [
-        "button",
-        buttonType,
-        buttonMainColor,
-        buttonFontColor,
-        buttonMarginRight,
-      ].join(" ")
+      [buttonType, buttonMainColor, buttonFontColor, buttonMarginRight].join(
+        " "
+      )
     );
   }, []);
 
   useEffect(() => {
     setClassList(
-      [
-        "button",
-        buttonType,
-        buttonMainColor,
-        buttonFontColor,
-        buttonMarginRight,
-      ].join(" ")
+      [buttonType, buttonMainColor, buttonFontColor, buttonMarginRight].join(
+        " "
+      )
     );
   }, [buttonType, buttonMainColor, buttonFontColor, buttonMarginRight]);
 

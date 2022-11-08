@@ -6,7 +6,7 @@
   @include m-border-radius-xs;
   transition: $transition-fastest;
 
-  &__button--primary {
+  &Primary {
     color: $soft-neutral-color-0;
     padding: 1rem 3rem;
     border: $v-border-xs solid transparent;
@@ -21,7 +21,7 @@
     }
   }
 
-  &__button--secondary {
+  &Secondary {
     border: $v-border-xs solid $primary-color-regular;
     padding: 1rem 3rem;
 
@@ -36,7 +36,7 @@
     }
   }
 
-  &__button--tertiary {
+  &Tertiary {
     &:hover,
     &:active {
       color: $primary-color-dark;

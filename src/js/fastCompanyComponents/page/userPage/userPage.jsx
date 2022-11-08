@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
 import PropTypes from "prop-types";
 
-import api from "../apps/FastCompany/api";
-import QualitiesList from "./qualitiesList";
-import Button from "../components/Button";
+import api from "../../../apps/FastCompany/api";
+import QualitiesList from "../../ui/qualities/qualitiesList";
+import Button from "../../../components/Button";
 
 const UserPage = ({ userId }) => {
   const history = useHistory();

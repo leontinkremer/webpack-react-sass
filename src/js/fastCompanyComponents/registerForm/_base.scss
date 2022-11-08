@@ -1,0 +1,8 @@
+@import "../../../scss/app.scss";
+.login-box {
+  &__inner {
+    &__span {
+      color: $soft-neutral-color-0;
+    }
+  }
+}
