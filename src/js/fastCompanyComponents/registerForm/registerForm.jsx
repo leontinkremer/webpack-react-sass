@@ -17,6 +17,7 @@ import Button from "../../components/Button";
 import Heading from "../../components/Heading";
 import RadioField from "../common/form/radioField";
 import MultiSelectField from "../common/form/multiSelectField";
+import CheckBoxField from "../common/form/checkBoxField";
 
 // Styles
 import "./_layout.scss";
@@ -28,6 +29,7 @@ const RegisterForm = ({ onRegisterClick }) => {
     profession: "",
     sex: "male",
     qualities: [],
+    license: false,
   });
   const [qualities, setQualities] = useState({});
   const [professions, setProfession] = useState();
@@ -61,6 +63,9 @@ const RegisterForm = ({ onRegisterClick }) => {
       },
     },
     profession: {
+      isRequired: { message: "Поле обязательно для заполнения." },
+    },
+    license: {
       isRequired: { message: "Поле обязательно для заполнения." },
     },
   };
@@ -148,6 +153,14 @@ const RegisterForm = ({ onRegisterClick }) => {
           onChange={handleChange}
           name="qualities"
         />
+        <CheckBoxField
+          value={data.license}
+          onChange={handleChange}
+          error={errors.license}
+          name="license"
+        >
+          Подтвердить лицензионное соглашение
+        </CheckBoxField>
         <p className="login-box__inner__span">
           Bereits registriert?
           <button

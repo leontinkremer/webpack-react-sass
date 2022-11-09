@@ -4,7 +4,10 @@ export function validator(data, config) {
     let statusValidate;
     switch (validateMethod) {
       case "isRequired":
-        statusValidate = data.trim() === "";
+        data === typeof "string"
+          ? (statusValidate = data.trim() === "")
+          : (statusValidate = !data);
+
         break;
 
       case "isEmail": {

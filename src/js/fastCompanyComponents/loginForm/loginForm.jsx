@@ -1,6 +1,9 @@
-//Build-in modules
+// Build-in modules
 import React, { useState, useEffect } from "react";
+
+// Third pary modules
 import PropTypes from "prop-types";
+import * as yup from "yup";
 
 // Utils
 import { validator } from "../../utils/validator";
@@ -9,12 +12,13 @@ import { validator } from "../../utils/validator";
 import TextField from "../../preComponents/TextField";
 import Button from "../../components/Button";
 import Heading from "../../components/Heading";
+import CheckBoxField from "../common/form/checkBoxField";
 
 // Styles
 import "./_layout.scss";
 
 const LoginForm = ({ onRegisterClick }) => {
-  const [data, setData] = useState({ email: "", password: "" });
+  const [data, setData] = useState({ email: "", password: "", stayOn: false });
   const [errors, setErrors] = useState({});
   const [buttonDisabled, setButtonDisabled] = useState(true);
 
@@ -91,6 +95,13 @@ const LoginForm = ({ onRegisterClick }) => {
           secondIcon="bi-eye-slash"
           error={errors.password}
         />
+        <CheckBoxField
+          value={data.stayOn}
+          onChange={handleChange}
+          name="stayOn"
+        >
+          Остаться в системе
+        </CheckBoxField>
         <p className="login-box__inner__span">
           Noch kein Account?{" "}
           <button
