@@ -16,6 +16,7 @@ import TextField from "../../preComponents/TextField";
 import Button from "../../components/Button";
 import Heading from "../../components/Heading";
 import RadioField from "../common/form/radioField";
+import MultiSelectField from "../common/form/multiSelectField";
 
 // Styles
 import "./_layout.scss";
@@ -26,19 +27,20 @@ const RegisterForm = ({ onRegisterClick }) => {
     password: "",
     profession: "",
     sex: "male",
+    qualities: [],
   });
+  const [qualities, setQualities] = useState({});
+  const [professions, setProfession] = useState();
   const [errors, setErrors] = useState({});
   const [buttonDisabled, setButtonDisabled] = useState(true);
 
-  const [professions, setProfession] = useState();
-
   useEffect(() => {
     api.professions.fetchAll().then((data) => setProfession(data));
+    api.qualities.fetchAll().then((data) => setQualities(data));
   }, []);
 
-  const handleChange = ({ target }) => {
+  const handleChange = (target) => {
     setData((prevState) => ({ ...prevState, [target.name]: target.value }));
-    console.log("errors.profession", errors.profession);
   };
 
   const validatorConfig = {
@@ -141,7 +143,11 @@ const RegisterForm = ({ onRegisterClick }) => {
           name="sex"
           label="Geschlecht"
         />
-
+        <MultiSelectField
+          options={qualities}
+          onChange={handleChange}
+          name="qualities"
+        />
         <p className="login-box__inner__span">
           Bereits registriert?
           <button

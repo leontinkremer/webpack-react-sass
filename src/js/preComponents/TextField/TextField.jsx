@@ -20,6 +20,11 @@ const TextField = ({
   error,
 }) => {
   const [showPassword, setShowPassword] = useState(false);
+
+  const handleChange = ({ target }) => {
+    onChange({ name: target.name, value: target.value });
+  };
+
   const toggleShowPassword = () => {
     setShowPassword((prevState) => !prevState);
   };
@@ -32,7 +37,7 @@ const TextField = ({
         value={value}
         id={name}
         name={name}
-        onChange={onChange}
+        onChange={handleChange}
       />
       <span className="text-field__span">{label}</span>
       {firstIcon && type === "password" && (
