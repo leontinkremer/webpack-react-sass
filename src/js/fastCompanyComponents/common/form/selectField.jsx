@@ -7,6 +7,7 @@ import PropTypes from "prop-types";
 const SelectField = ({
   label,
   value,
+  name,
   onChange,
   defaultOption,
   options,
@@ -31,15 +32,15 @@ const SelectField = ({
   return (
     <div className="col-md-4">
       <label
-        htmlFor="validationCustom04"
+        htmlFor={name}
         className="form-label u-font-color-soft-neutral-color-0"
       >
         {label}
       </label>
       <select
         className={getInputClasses()}
-        id="validationCustom04"
-        name="profession"
+        id={name}
+        name={name}
         value={value}
         onChange={handleChange}
       >
@@ -61,6 +62,7 @@ const SelectField = ({
 SelectField.propTypes = {
   label: PropTypes.string,
   value: PropTypes.string,
+  name: PropTypes.string,
   onChange: PropTypes.func,
   defaultOption: PropTypes.string,
   options: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),

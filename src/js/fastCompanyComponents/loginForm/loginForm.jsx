@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 
 // Third pary modules
 import PropTypes from "prop-types";
-import * as yup from "yup";
 
 // Utils
 import { validator } from "../../utils/validator";

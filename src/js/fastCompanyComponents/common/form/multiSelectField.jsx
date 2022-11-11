@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 import Select from "react-select";
 import makeAnimated from "react-select/animated";
 
-const MultiSelectField = ({ options, onChange, name }) => {
+const MultiSelectField = ({ options, onChange, name, defaultValue }) => {
   const optionsArray =
     !Array.isArray(options) && typeof options === "object"
       ? Object.keys(options).map((optionName) => ({
@@ -21,6 +21,7 @@ const MultiSelectField = ({ options, onChange, name }) => {
 
   return (
     <Select
+      defaultValue={defaultValue}
       isMulti
       closeMenuOnSelect={false}
       options={optionsArray}
@@ -32,6 +33,7 @@ const MultiSelectField = ({ options, onChange, name }) => {
 };
 
 MultiSelectField.propTypes = {
+  defaultValue: PropTypes.array,
   options: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
   onChange: PropTypes.func,
   name: PropTypes.string,
