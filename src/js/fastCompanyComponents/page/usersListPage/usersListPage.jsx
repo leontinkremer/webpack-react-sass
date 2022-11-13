@@ -51,7 +51,7 @@ const UsersListPage = () => {
     setSortBy(item);
   };
 
-  const handleSearchQuery = ({ target }) => {
+  const handleSearchQuery = (target) => {
     setSelectedProf();
     setSearchQuery(target.value);
   };
@@ -108,7 +108,7 @@ const UsersListPage = () => {
             <TextField
               label="Поиск"
               onChange={handleSearchQuery}
-              value={searchQuery}
+              value={searchQuery} // checked ok
             />
           </div>
 

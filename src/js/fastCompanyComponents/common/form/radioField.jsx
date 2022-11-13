@@ -20,7 +20,7 @@ const RadioField = ({ value, onChange, options, name, label }) => {
           className="form-check form-check-inline "
         >
           <input
-            className="form-check-input "
+            className="form-check-input"
             type="radio"
             name={name}
             id={option.name + "_" + option.value}
