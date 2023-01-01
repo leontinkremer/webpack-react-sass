@@ -1,0 +1,57 @@
+@import "../../../../../scss/app.scss";
+
+.column {
+  flex: 1 1 auto;
+}
+
+.loginForm {
+  margin-bottom: 2rem;
+}
+.loginFormHeader {
+  margin-bottom: 2rem;
+}
+
+.formHeaderText {
+  font-size: 2.6rem;
+  text-align: center;
+  color: $primary-color-regular;
+}
+
+.loginFormContainer {
+  border: $v-border-xxs $soft-neutral-color-200 solid;
+  border-radius: $v-border-sm;
+  margin: 1rem;
+  padding: 2rem;
+}
+
+.loginFormButtonsSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+}
+
+.loginFormFooter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 2rem;
+  border-top: $v-border-xxs $soft-neutral-color-200 solid;
+}
+
+.loginFormLink {
+  box-shadow: inset 0 0 0 0 $secondary-color-regular;
+  color: $secondary-color-regular;
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.loginFormLink:hover {
+  box-shadow: inset 210px 0 0 0 $secondary-color-regular;
+  color: white;
+}

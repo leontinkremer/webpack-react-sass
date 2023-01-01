@@ -127,7 +127,8 @@ body {
 }
 
 // Remove list item style
-ul {
+ul,
+li {
   list-style-type: none;
 }
 

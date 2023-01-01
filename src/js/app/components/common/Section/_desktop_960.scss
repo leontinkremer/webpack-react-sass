@@ -1,0 +1,7 @@
+/* CSS-Anweisungen für Desktop */
+
+@media only screen and (min-width: $breakpoint-lg) {
+  .container {
+    max-width: $breakpoint-xl;
+  }
+}

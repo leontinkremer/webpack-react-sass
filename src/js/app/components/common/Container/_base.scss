@@ -1,0 +1,12 @@
+@import "../../../../../scss/app.scss";
+
+.container {
+  // background-color: $container-color-lightest;
+  // border: $container-color-regular 1px dashed;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.maxWidth {
+  max-width: $breakpoint-xl;
+}

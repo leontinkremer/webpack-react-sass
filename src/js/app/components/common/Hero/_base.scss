@@ -1,0 +1,73 @@
+@import "../../../../../scss/app.scss";
+
+.container {
+  /* Styles */
+  // background-color: rgb(0, 17, 255);
+}
+
+.row {
+  /* Display & Box Model */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+
+  /* Other */
+  max-width: $breakpoint-xl;
+  margin: 0 auto;
+
+  /* Styles */
+  // background-color: rgb(47, 175, 255);
+}
+
+.column {
+  /* Display & Box Model */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  flex: 1 1 auto;
+
+  /* Styles */
+  //   background-color: rgb(226, 145, 255);
+}
+
+.inner {
+  /* Display & Box Model */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  /* Styles */
+  //   background-color: rgb(254, 248, 209);
+  margin: 8rem;
+}
+
+.heading {
+  /* Styles */
+  font-size: $font-size-xxxl;
+  font-weight: 700;
+  color: $soft-neutral-color-700;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.headingSpan {
+  color: $primary-color-regular;
+}
+
+.paragraph {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: $soft-neutral-color-700;
+  font-size: $font-size-lg;
+}

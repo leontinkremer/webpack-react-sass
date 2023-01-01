@@ -261,3 +261,25 @@
     margin-bottom: 4rem;
   }
 }
+
+.u-max-width {
+  &-xs {
+    max-width: $breakpoint-xs;
+  }
+
+  &-sm {
+    max-width: $breakpoint-sm;
+  }
+
+  &-md {
+    max-width: $breakpoint-md;
+  }
+
+  &-lg {
+    max-width: $breakpoint-lg;
+  }
+
+  &-xl {
+    max-width: $breakpoint-xl;
+  }
+}

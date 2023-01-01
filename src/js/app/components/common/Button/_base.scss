@@ -1,0 +1,22 @@
+@import "../../../../../scss/app.scss";
+
+.button {
+  border: 1px solid $primary-color-regular;
+  border-radius: $v-border-sm;
+  padding: 1rem 2rem;
+  display: inline-block;
+  text-align: center;
+}
+
+.primary {
+  color: $soft-neutral-color-0;
+  background: $primary-color-regular;
+}
+
+.secondary {
+  color: $primary-color-regular;
+}
+
+.marginRight {
+  margin-right: 1rem;
+}

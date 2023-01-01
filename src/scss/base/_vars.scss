@@ -14,6 +14,7 @@ $font-size-md: 1.8rem;
 $font-size-lg: 2.4rem;
 $font-size-xl: 3rem;
 $font-size-xxl: 3.6rem;
+$font-size-xxxl: 5rem;
 
 /* Breakpoints */
 $breakpoint-xs: 0;
@@ -26,7 +27,7 @@ $breakpoint-xl: 1200px;
 /* Grid setup */
 
 /* Main colors */
-$primary-color-regular: #102f3f;
+$primary-color-regular: #24285b;
 $primary-color-light: lighten($primary-color-regular, 5%);
 $primary-color-lighter: lighten($primary-color-regular, 10%);
 $primary-color-lightest: lighten($primary-color-regular, 60%);
@@ -34,7 +35,7 @@ $primary-color-dark: darken($primary-color-regular, 5%);
 $primary-color-darker: darken($primary-color-regular, 10%);
 $primary-color-darkest: darken($primary-color-regular, 20%);
 
-$secondary-color-regular: #335566;
+$secondary-color-regular: #60cfe9;
 $secondary-color-light: lighten($secondary-color-regular, 5%);
 $secondary-color-lighter: lighten($secondary-color-regular, 10%);
 $secondary-color-lightest: lighten($secondary-color-regular, 60%);
@@ -60,6 +61,17 @@ $soft-neutral-color-700: #464a4c;
 $soft-neutral-color-800: #222425;
 $soft-neutral-color-900: #101112;
 
+/* Dev colors */
+
+$section-color-regular: #e538a0;
+$section-color-lightest: #f5afd9;
+$container-color-regular: #e58138;
+$container-color-lightest: #f5cdaf;
+$row-color-regular: #0da500;
+$row-color-lightest: #9edb99;
+$columnt-color-regular: #8638e5;
+$columnt-color-lightest: #dbc3f7;
+
 /* Components */
 
 /* Sizes */
@@ -79,4 +91,4 @@ $transition-fastest: all 0.2s ease-in-out;
 $v-border-xxs: 0.1rem;
 $v-border-xs: 0.2rem;
 $v-border-sm: 0.5rem;
-$v-border-sm: 1rem;
+$v-border-md: 1rem;

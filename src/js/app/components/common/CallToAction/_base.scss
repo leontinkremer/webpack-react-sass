@@ -1,0 +1,52 @@
+@import "../../../../../scss/app.scss";
+
+.section {
+  /* Styles */
+  //   background-color: rgb(160, 166, 255);
+}
+
+.container {
+  //   background-color: rgb(0, 17, 255);
+}
+
+.row {
+  /* Display & Box Model */
+
+  /* Other */
+
+  /* Styles */
+  background-color: $secondary-color-darkest;
+}
+
+.columnLeft {
+  /* Display & Box Model */
+
+  /* Styles */
+  // background-color: rgb(226, 145, 255);
+}
+
+.columnRight {
+  /* Display & Box Model */
+
+  /* Styles */
+  // background-color: rgb(151, 255, 145);
+}
+
+.contentBox {
+  // background-color: red;
+}
+
+.contentHeading {
+  font-size: $font-size-lg;
+  font-weight: 700;
+  color: $soft-neutral-color-0;
+  margin-bottom: 1rem;
+}
+
+.contentText {
+  color: $soft-neutral-color-0;
+}
+
+.actionBox {
+  background-color: rgb(34, 0, 255);
+}

@@ -1,0 +1,72 @@
+/* CSS-Anweisungen für Desktop */
+
+@media only screen and (min-width: $breakpoint-lg) {
+  .section {
+    /* Styles */
+  }
+
+  .container {
+    max-width: $breakpoint-xl;
+    margin: 0 auto;
+    /* Styles */
+  }
+
+  .row {
+    /* Display & Box Model */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: $v-border-sm;
+
+    /* Other */
+    padding: 5rem;
+
+    /* Styles */
+  }
+
+  .columnLeft {
+    /* Display & Box Model */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    flex: 1 1 auto;
+
+    /* Styles */
+  }
+
+  .columnRight {
+    /* Display & Box Model */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    flex: 0 1 auto;
+
+    /* Styles */
+  }
+
+  .contentBox {
+    flex: 1 1 auto;
+  }
+
+  .contentHeading {
+    line-height: 3.3rem;
+    text-transform: uppercase;
+  }
+
+  .contentText {
+  }
+
+  .actionBox {
+  }
+}

@@ -1,0 +1,16 @@
+@import "../../../../../scss/app.scss";
+
+.inputFieldBox {
+  margin-bottom: 1.6rem;
+}
+
+.inputField {
+  width: 100%;
+  border-radius: $v-border-sm;
+  border: $v-border-xxs $soft-neutral-color-200 solid;
+  padding: 1rem 0.8rem;
+}
+
+.inputFieldLable {
+  color: $secondary-color-regular;
+}

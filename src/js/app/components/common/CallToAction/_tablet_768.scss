@@ -1,0 +1,74 @@
+/* CSS-Anweisungen für Tabltets und Notebooks */
+
+@media only screen and (min-width: $breakpoint-sm) and (max-width: $breakpoint-lg) {
+  .section {
+    /* Styles */
+  }
+
+  .container {
+    max-width: $breakpoint-xl;
+    margin: 0 auto;
+    /* Styles */
+  }
+
+  .row {
+    /* Display & Box Model */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    /* Other */
+    padding: 2rem;
+
+    /* Styles */
+  }
+
+  .columnLeft {
+    /* Display & Box Model */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+
+    flex: 1 1 auto;
+
+    /* Styles */
+  }
+
+  .columnRight {
+    /* Display & Box Model */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    flex: 0 1 auto;
+
+    /* Styles */
+  }
+
+  .contentBox {
+    flex: 1 1 auto;
+    margin-bottom: 2rem;
+  }
+
+  .contentHeading {
+    line-height: 3.3rem;
+    text-transform: uppercase;
+  }
+
+  .contentText {
+    font-size: $font-size-md;
+    font-weight: 200;
+  }
+
+  .actionBox {
+  }
+}

@@ -1,0 +1,102 @@
+@import "../../../../../scss/app.scss";
+
+.nav {
+  background: $soft-neutral-color-50;
+  height: 80px;
+  width: 100%;
+}
+
+.navList {
+  float: right;
+  margin-right: 20px;
+}
+
+.navLogo {
+  color: $primary-color-regular;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+.navListItem {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+
+  color: $primary-color-regular;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.navLink {
+}
+
+.navLinkActive,
+.navLink:hover {
+  background-color: $primary-color-regular;
+  color: $soft-neutral-color-0;
+  transition: 0.5s;
+}
+
+.navCheckButton {
+  font-size: 30px;
+  color: $primary-color-regular;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+.navInput {
+  display: none;
+}
+
+@media (max-width: 952px) {
+  .navLogo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+
+  .navLink {
+    font-size: 16px;
+  }
+}
+// @media (max-width: 858px) {
+//   .navCheckButton {
+//     display: block;
+//   }
+//   .navList {
+//     position: fixed;
+//     float: left;
+//     width: 100%;
+//     height: 100vh;
+//     background: $soft-neutral-color-0;
+//     top: 80px;
+//     left: -100%;
+//     text-align: center;
+//     transition: all 0.5s;
+//   }
+//   .navListItem {
+//     display: block;
+//     margin: 50px 0;
+//     line-height: 30px;
+//   }
+
+//   // == not checked ==
+
+//   .navLink {
+//     font-size: 20px;
+//     color: $primary-color-regular;
+//   }
+//   .navLink:hover,
+//   .navLinkActive {
+//     background: $primary-color-regular;
+//     color: $soft-neutral-color-0;
+//   }
+//   .navInput:checked ~ ul {
+//     left: 0;
+//   }
+// }

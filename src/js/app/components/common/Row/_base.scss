@@ -1,0 +1,14 @@
+@import "../../../../../scss/app.scss";
+
+.row {
+  // background-color: $row-color-lightest;
+  // border: $row-color-regular 1px dashed;
+  margin: 1rem auto;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
